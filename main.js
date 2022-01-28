@@ -62,8 +62,8 @@ const particlesCount = 1000;
 const positionArray = new Float32Array(particlesCount * 3);
 
 //テクスチャ設定
-const textureLoader = new THREE.TextureLoader();
-const particlesTexture = textureLoader.load('./assets/particleImage.png');
+// const textureLoader = new THREE.TextureLoader();
+// const particlesTexture = textureLoader.load('./particleImage.png');
 
 for (let i = 0; i < particlesCount * 3; i++) {
   positionArray[i] = (Math.random() - 0.5) * 30; //*10にして画面いっぱいにしている
@@ -77,7 +77,7 @@ const particlesMaterial = new THREE.PointsMaterial({
   sizeAttenuation: true,
   transparent: true,
   color: "white",
-  alphaMap: particlesTexture,
+  // alphaMap: particlesTexture,
 });
 const particles = new THREE.Points(particleGeometry, particlesMaterial);
 scene.add(particles);

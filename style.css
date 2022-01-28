@@ -60,7 +60,7 @@ main {
   font-size: clamp(36px, 80vw, 80px);
   margin-bottom: 4rem;
   letter-spacing: .1em;
-  text-shadow: 0 5px 6px rgba(131, 130, 130, 0.8);
+  text-shadow: 0 5px 6px rgba(31, 31, 31, 0.8);
 }
 
 .title-sub{
@@ -75,7 +75,6 @@ main {
   padding: 1.2rem 3rem;
   background: transparent;
   border: 1px solid #aaa;
-  text-shadow: 0 5px 6px rgba(131, 130, 130, 0.8);
   color: #f0f5f2;
   font-size: 1.2rem;
   cursor: pointer;
@@ -121,9 +120,10 @@ main {
   align-items: center;
   width:80%;
   height:80vh;
-  background-color:rgba(24, 23, 27, 0.7);
+  background-color:rgba(24, 23, 27, 0.8);
   backdrop-filter: blur(2px);
-  padding:100px 20px;
+  -webkit-backdrop-filter: blur(2px);
+  padding:80px 20px 40px;
   overflow: auto;
 }
 
@@ -144,7 +144,7 @@ main {
 }
 
 .module-contents-items{
-  padding:60px 20px;
+  padding:60px 20px 30px;
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;

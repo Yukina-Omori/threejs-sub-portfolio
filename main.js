@@ -63,7 +63,7 @@ const positionArray = new Float32Array(particlesCount * 3);
 
 //テクスチャ設定
 const textureLoader = new THREE.TextureLoader();
-const particlesTexture = textureLoader.load('./particleImage.png');
+const particlesTexture = textureLoader.load('./assets/particleImage.png');
 
 for (let i = 0; i < particlesCount * 3; i++) {
   positionArray[i] = (Math.random() - 0.5) * 30; //*10にして画面いっぱいにしている
